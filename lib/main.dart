@@ -16,19 +16,21 @@ class BallPage extends StatelessWidget {
         title: Text('Ask Me Anything'),
         centerTitle: true,
       ),
-      body: Container(),
+      body: Ball(),
     );
   }
 }
 
-//class BallPage extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Container(
-//      margin: const EdgeInsets.all(10.0),
-//      color: Colors.red[600],
-//      width: 48.0,
-//      height: 48.0,
-//    );
-//  }
-//}
+class Ball extends StatefulWidget {
+  @override
+  _BallState createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(child: Image.asset('images/ball1.png')),
+    );
+  }
+}
