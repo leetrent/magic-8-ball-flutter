@@ -16,9 +16,7 @@ class BallPage extends StatelessWidget {
         title: Text('Ask Me Anything'),
         centerTitle: true,
       ),
-      body: Container(
-//        constraints: BoxConstraints.expand(),
-          ),gi
+      body: Container(),
     );
   }
 }
